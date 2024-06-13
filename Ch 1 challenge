@@ -11,18 +11,31 @@
 
 class Stock:
     pass
-    ticker = ("MSFT", "GOOG", "META", "AMZN")
-    price = (342.0, 135.0, 275.0, 135.0)
-    Company = ("Microsoft Corp", "Google Inc", "Meta Platforms Inc", "Amazon Inc")
     def __init__(self, ticker, price, company):
         print("stock is created")
+        
     #3 attributes
         self.ticker = ticker
         self.price = price
-        self.company = company
+        self.name = company
     #function or method
     def get_description(self):
-        print(ticker, price, company)
+        i=0
+        ticker = ("MSFT", "GOOG", "META", "AMZN")
+        price = (342.0, 135.0, 275.0, 135.0)
+        company = ("Microsoft Corp", "Google Inc", "Meta Platforms Inc", "Amazon Inc")
+        if i == 0:
+            print(ticker[i], price[i], company[i])
+        i = i + 1
+        if i == 1:
+            print(ticker[i], price[i], company[i])
+        i = i + 1
+        if i  == 2:
+            print(ticker[i], price[i], company[i])
+        i= i + 1
+        if i == 3:
+            print(ticker[i], price[i], company[i])
+
 # ~~~~~~~~~ TEST CODE ~~~~~~~~~
 msft = Stock("MSFT", 342.0, "Microsoft Corp")
 goog = Stock("GOOG", 135.0, "Google Inc")
