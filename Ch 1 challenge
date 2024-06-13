@@ -16,7 +16,7 @@ class Stock:
     #3 attributes
         self.ticker = ticker
         self.price = price
-        self.name = compamy
+        self.company = company
     #function or method
     def get_description(self):
         print(ticker, price, company)
