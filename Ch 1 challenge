@@ -21,20 +21,13 @@ class Stock:
     #function or method
     def get_description(self):
         i=0
+        Numbers  = (0,1,2,3)
         ticker = ("MSFT", "GOOG", "META", "AMZN")
         price = (342.0, 135.0, 275.0, 135.0)
         company = ("Microsoft Corp", "Google Inc", "Meta Platforms Inc", "Amazon Inc")
-        if i == 0:
+        for i in Numbers:
             print(ticker[i], price[i], company[i])
         i = i + 1
-        if i == 1:
-            print(ticker[i], price[i], company[i])
-        i = i + 1
-        if i  == 2:
-            print(ticker[i], price[i], company[i])
-        i= i + 1
-        if i == 3:
-            print(ticker[i], price[i], company[i])
 
 # ~~~~~~~~~ TEST CODE ~~~~~~~~~
 msft = Stock("MSFT", 342.0, "Microsoft Corp")
