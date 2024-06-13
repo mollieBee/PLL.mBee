@@ -26,7 +26,7 @@ class Stock:
         price = (342.0, 135.0, 275.0, 135.0)
         company = ("Microsoft Corp", "Google Inc", "Meta Platforms Inc", "Amazon Inc")
         for i in Numbers:
-            print(ticker[i], price[i], company[i])
+            print(ticker[i], ":", company[i], "--$", price[i])
         i = i + 1
 
 # ~~~~~~~~~ TEST CODE ~~~~~~~~~
