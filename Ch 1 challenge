@@ -11,6 +11,9 @@
 
 class Stock:
     pass
+    ticker = ("MSFT", "GOOG", "META", "AMZN")
+    price = (342.0, 135.0, 275.0, 135.0)
+    Company = ("Microsoft Corp", "Google Inc", "Meta Platforms Inc", "Amazon Inc")
     def __init__(self, ticker, price, company):
         print("stock is created")
     #3 attributes
