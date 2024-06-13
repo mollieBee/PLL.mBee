@@ -18,7 +18,7 @@ class Stock:
         self.price = price
         self.name = compamy
     #function or method
-    def get_description:
+    def get_description(self):
         print(ticker, price, company)
 # ~~~~~~~~~ TEST CODE ~~~~~~~~~
 msft = Stock("MSFT", 342.0, "Microsoft Corp")
