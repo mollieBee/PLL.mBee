@@ -13,8 +13,9 @@ class Stock:
     pass
     def __init__(self, ticker, price, company):
         print("stock is created")
-        self.ticker = ABBV 
-        self.price = 100.0
+    #3 attributes
+        self.ticker = ticker
+        self.price = price
         self.name = name         
 # ~~~~~~~~~ TEST CODE ~~~~~~~~~
 msft = Stock("MSFT", 342.0, "Microsoft Corp")
