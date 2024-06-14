@@ -13,7 +13,7 @@
 # For bonds: "description: duration'yr' : $price : yieldamt%"
 from abc import ABC, abstractmethod
 class Asset(ABC):
-    def __init__(self, price)
+    def __init__(self, price):
         self.price = price
         super().__init__()
         print("You cannot create an asset without defining its type!")
@@ -21,7 +21,7 @@ class Asset(ABC):
 class Stock(Asset):
     def __init__(self, ticker, price, company):
         print("stock is created")
-        super() __init(price)
+        super(). __init(price)
     #3 attributes
         self.ticker = ticker
         self.name = company
@@ -32,7 +32,7 @@ class Stock(Asset):
 class Bond(Asset):
      def __init__(self, description, duration, yield):
         print("bond is created")
-        super() __init(price)
+        super(). __init(price):
     def get_description(self):
         self.description = description
         self.duration = duration
