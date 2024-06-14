@@ -27,12 +27,12 @@ class Stock(Asset):
         self.name = company
     #function or method
     def get_description(self):
-        return f"{self.ticker}: {self.company} 
+        return f"{self.ticker}: {self.company}"
 
 class Bond(Asset):
      def __init__(self, description, duration, yield):
         print("bond is created")
-        super(). __init(price):
+        super(). __init(price)
     def get_description(self):
         self.description = description
         self.duration = duration
