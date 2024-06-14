@@ -38,7 +38,7 @@ class Bond(Asset):
         self.duration = duration
         self.yield = yield
     def get_description(self):
-        return f"{self.description} : {self.duration}yr : ${self.yield}"
+        return f"{self.description} : {self.duration}yr : ${self.yield}%"
 
 
 # ~~~~~~~~~ TEST CODE ~~~~~~~~~
