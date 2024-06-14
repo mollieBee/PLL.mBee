@@ -19,7 +19,7 @@ class Asset(ABC):
         print("You cannot create an asset without defining its type!")
 
 class Stock(Asset):
-    def __init__(self, ticker, price, company):
+    def __init__(self, ticker, company):
         print("stock is created")
         super(). __init(price)
     #3 attributes
