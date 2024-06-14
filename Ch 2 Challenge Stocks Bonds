@@ -6,15 +6,16 @@
 # -- Both stocks and bonds have a price
 # -- Stocks have a company name and ticker
 # -- Bonds have a description, duration, and yield
-FIX# -- You should not be able to instantiate the base class
+# -- You should not be able to instantiate the base class
 # -- Subclasses are required to override get_description()
 # -- get_description returns formats for stocks and bonds
 # For stocks: "Ticker: Company -- $Price"
 # For bonds: "description: duration'yr' : $price : yieldamt%"
-
-class Asset():
+from abc import ABC, abstractmethod
+class Asset(ABC):
     def __init__(self, price)
         self.price = price
+        super().__init__()
         print("You cannot create an asset without defining its type!")
 
 class Stock(Asset):
