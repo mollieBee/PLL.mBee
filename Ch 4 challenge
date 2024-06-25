@@ -34,7 +34,7 @@ class Asset(ABC):
         price: float
 
     @abstractmethod
-    def __str__(self):
+    def __lt__(self, other):
         pass
 
 class Stock(Asset):
