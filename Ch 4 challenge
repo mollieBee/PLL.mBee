@@ -6,6 +6,9 @@ from abc import ABC, abstractmethod
 # Challenge: convert your classes to dataclasses
 # The subclasses are required to override the magic method
 # that makes them sortable
+
+from dataclasses import dataclass
+@dataclass
 class Asset(ABC):
     def __init__(self, price):
         #self.price = price
