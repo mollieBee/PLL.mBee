@@ -1,0 +1,34 @@
+import time
+# Input for the ENTER key press
+value = input()
+estimate = "Please enter guess of the time elapsed"
+stoptime = starttime
+starttime = time.time()
+# Total time elapsed since the timer started
+totaltime = round((time.time() - starttime), 2)
+if totaltime == estimate
+  print("Wow!  Great job!!!")
+elseif totalime - estimate  or estimate = totaltime <= 5
+  print("So close!  Good job - you are within 5 seconds!"
+else:
+  print("You lose - ho, hum.  But try again!  Practice always does the body good!")
+
+#video
+import random
+def wwaiting_game():
+  target = random.randint(2,4) # target s to wait
+  print(f'\nYour target time is {target} seconds')
+
+  input('---Press Enter to Begin---')
+  start = time.perf_coumter()
+
+  input(f'\n...Press Enter again after {target} seconds...'
+  elapsed = time.perf_counter()- start
+
+  print(f'\nElapsed time: {elapsed :.3f} seconds')
+  if elapsed == target:
+    print('(Unbelievable!  Perfect timing!)')
+  elif elapsed < target:
+    print(f'({target-elapsed :.3f} seonds too fast)')
+  else:
+      print(f'({target-elapsed :.3f} seonds too slow)')
