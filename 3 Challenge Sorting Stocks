@@ -29,10 +29,12 @@ class Stock(Asset):
   def __str__(self):
     return f"{self.company"'s price is : {self.price}"
 
-  def __le__(self, value):
-      if not isinstance(value.Stock):
-        raise ValueError("Stocks can only compare with other stocks.")
-      return self.price <= value.price
+  #def __le__(self, value):
+      #if not isinstance(value.Stock):
+       # raise ValueError("Stocks can only compare with other stocks.")
+      #return self.price <= value.price
+  def __lt__(self, other):
+        return self.price < other.price
 
   
 
@@ -52,10 +54,12 @@ class Bond(Asset):
     def __str__(self):
       return f"{self.description"'s yield amount is : {self.yieldamt}"
 
-    def __le__(self, value):
-      if not isinstance(value.Bond):
-        raise ValueError("Bonds can only compare with other bonds.")
-      return self.yieldamt <= value.yieldamt
+    #def __le__(self, value):
+      #if not isinstance(value.Bond):
+        #raise ValueError("Bonds can only compare with other bonds.")
+      #return self.yieldamt <= value.yieldamt
+    def __lt__(self, other):
+        return self.yieldamt < other.yieldamt
 
 # ~~~~~~~~~ TEST CODE ~~~~~~~~~
 stocks = [
