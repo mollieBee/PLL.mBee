@@ -2,7 +2,8 @@ import math
 import dataclass
 @dataclass
 class PNumber():
-  input = int
+  num: int
+  i: int
 
   def __init__prime_find:
     if isinstance is not int
