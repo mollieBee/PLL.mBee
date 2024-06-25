@@ -20,10 +20,14 @@ class Immutable_Class:
     value2: int = price_func
 
 obj = ImmutableClass()
+
+#obj.Value1 = "Another String"
 print(obj.value1)
 
 from dataclasses import dataclass
 @dataclass
+#Try this with a change in Value 1 and comment out above line when uncommented
+#@dataclass(frozen=True)
 class Asset(ABC):
     def __init__(self, price):
         #self.price = price
