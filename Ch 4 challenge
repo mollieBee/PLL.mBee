@@ -7,6 +7,12 @@ from abc import ABC, abstractmethod
 # The subclasses are required to override the magic method
 # that makes them sortable
 
+#Note: can use default values, but keep in mind those instances need to come first
+#You can also use the field function to declare a default value so it would look like - price: float = field(default = 10.0)
+#You can also use a function  which would look like -  price: float = field(default_factory=price_func
+#def price_func():
+#    return float(random.randrange(20,40)
+
 from dataclasses import dataclass
 @dataclass
 class Asset(ABC):
