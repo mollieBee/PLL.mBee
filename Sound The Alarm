@@ -1,0 +1,10 @@
+# 3 inputs - time of alarm, sound file and message to display
+#eg: num = int(input("Enter a number: "))
+#print(num, " ", type(num))
+import time
+def sound_the_alarm
+  set_alarm = int(input("Please enter the time you want the alarm to go off'")
+    alarm_time = set_alarm
+  file_location = input("Please enter your sound file location")
+#add playing the sound file
+  print("Time to get up and get moving!  You asked for this :) This is the sound that you wanted, by the way -this was ALL your idea.")
