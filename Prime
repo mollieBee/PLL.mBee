@@ -1,5 +1,19 @@
 import math
 import dataclass
+
+#video without classes
+def getPrimeFactors(number):
+  factors[]
+  divisor = 2
+  while divisor is <= number:
+    if number % divisor == 0:
+      factors.append(divisor)
+      number = number//divisor
+    else:
+      divisor += 1
+return factors
+
+
 @dataclass
 class PNumber():
   num: int
