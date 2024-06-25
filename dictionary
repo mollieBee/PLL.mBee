@@ -1,0 +1,35 @@
+https://www.geeksforgeeks.org/how-to-create-a-dictionary-in-python/
+# Initialize an empty dictionary
+D = {} 
+ 
+L = [['a', 1], ['b', 2], ['a', 3], ['c', 4]]
+ 
+# Loop to add key-value pair
+# to dictionary
+for i in range(len(L)):
+    # If the key is already 
+    # present in dictionary
+    # then append the value 
+    # to the list of values
+    if L[i][0] in D:
+        D[L[i][0]].append(L[i][1])
+     
+    # If the key is not present
+    # in the dictionary then add
+    # the key-value pair
+    else:
+        D[L[i][0]]= []
+        D[L[i][0]].append(L[i][1])
+         
+print(D)
+  # video
+  import pickle
+  def save_dict(dict_to_save, file_path):
+    with open(file_path, 'wb') as file:
+      picke.dump(dict_to_save, file)
+
+  def load_dict(file_path)
+    with open(file_path, 'rb') as file:
+      return pickle(load(file)
+      
+  
