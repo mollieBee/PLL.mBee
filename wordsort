@@ -1,0 +1,28 @@
+#sort words alphabetically
+def stringsort(s):
+  if s is not str
+    raise ValueError
+  li = []
+  l = len(s)
+  f or i in range (0,l):
+    li.append(s[i])
+ 
+ 
+  for i in range(0,l):
+    for j in range(0,l):
+        if li[i]<li[j]:
+            li[i],li[j]=li[j],li[i]
+  j=""
+ 
+  for i in range(0,l):
+    j = j+li[i]
+ 
+  print(j)
+
+#video
+def sort_words(input):
+  words = input.split()
+  words = [w.lolwer() + w for w in words
+  words.sort()
+  words = [w[len(w)//2:] for w in words
+  return ' '.join(words)
