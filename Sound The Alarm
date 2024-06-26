@@ -10,4 +10,5 @@ def sound_the_alarm
   file_location = input("Please enter your sound file location")
 #add playing the sound file
   some_sound = pygame.mixer.Sound('path/to/my/soundfile.wav"X:\ET_Data-FHills\Private\OPTOOL\OE Tools\Mollie B\Coding\mixkit-battleship-alarm-1001.wav"')
+  some_sound.play()
   print("Time to get up and get moving!  You asked for this :) This is the sound that you wanted, by the way -this was ALL your idea.")
