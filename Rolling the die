@@ -1,0 +1,38 @@
+#monte carlo variable number of die, with variable number of sides, and outputs prob
+#The probability of rolling any given number with a single die on a single roll is equal to one divided by the number of die faces.
+
+#A clever way to easily calculate it is to first raise the probability of not getting a six on each throw to the power of the number of throws possible. 
+#The probability of not rolling a six is (6-1) / 6 = 5/6 or 0.8333. 
+#With six dice, we have 5/6^6 = 5/6 · 5/6 · 5/6 · 5/6 · 5/6 · 5/6 = 0.3349. 
+#This means that the probability of throwing at least one six with six tries is 1 - 0.3349 = 0.6651 or 66.51% giving odds of roughly 2/3. 
+#In effect, the multiplication in the denominator calculates the sample space whereas the multiplication in the numerator computes the number of unfavourable outcomes in the sample space. 
+#We have 5^5 = 15,625 possibilities for not seeing a single six out of 6^6 = 46,656 total possibilities.
+
+# import libraries
+import numpy as np
+import random
+
+# initialize variables
+n_simulations = input("Please enter the number of simulations you want to run")#1000000
+
+n_die = input("Please enter the number of die to roll") 
+n_face = input("Please enter the number of face on each die") #6
+n_probability = #n_die/n_face
+
+# dice.py
+
+# ~~~ App's main code block ~~~
+# 1. Get and validate user's input
+#num_die = input("How many dice do you want to roll? [1-6] ")
+num_die = parse_input(num_dice_input)
+def roll_dice(num_di3):
+    #Return a list of integers with length `num_dice`.
+
+    #Each integer in the returned list is a random number between
+    #1 and 6, inclusive.
+
+    roll_results = []
+    for _ in range(num_dice):
+        roll = random.randint(1, n_face)
+        roll_results.append(roll)
+    return roll_results
