@@ -1,0 +1,34 @@
+#Add an Image to a Slide in Python
+#Create an object of the Presentation class.
+#Load a PowerPoint presentation using Presentation. LoadFromFile() method.
+#Get a specific slide by its index through Presentation. ...
+#Add an image to the slide using ISlide. ...
+#Save the resulting presentation using Presentation.
+import math
+from spire.presentation import *
+
+inputFile = input("Please select the ppt to add the image to")
+#outputFile =  "AddImageToSlideMaster.pptx"
+
+# Create an object of the Presentation class
+
+presentation = Presentation()
+
+# Load a PowerPoint presentation
+presentation.LoadFromFile(inputFile)
+
+# Get the first slide
+slide = presentation.Slides[0]
+
+# Insert an image into the slide
+imageFile = input("Please select your image")
+#change to match a template
+left = math.trunc(presentation.SlideSize.Size.Width / float(2)) - 280
+rect1 = RectangleF.FromLTRB (left, 140, 120 + left, 260)
+image = slide.Shapes.AppendEmbedImageByPath (ShapeType.Rectangle, imageFile, rect1)
+image.Line.FillType = FillFormatType.none
+
+# Save the resulting presentation
+presentation.SaveToFile(outputFile, FileFormat.Pptx2010)
+
+presentation.Dispose()
