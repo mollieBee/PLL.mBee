@@ -3,12 +3,28 @@
 #print(num, " ", type(num))
 import time
 import pygame
+import sched
 pygame.init()
+
+from datetime import datetime
+now = datetime.now()
+current_time = now.strftime("%H:%M:%S")
+#print("Current Time =", current_time)
+
 def sound_the_alarm
   set_alarm = int(input("Please enter the time you want the alarm to go off'")
     alarm_time = set_alarm
-  file_location = input("Please enter your sound file location")
+file_location = input("Please enter your sound file location")
 #add playing the sound file
-  some_sound = pygame.mixer.Sound('path/to/my/soundfile.wav"X:\ET_Data-FHills\Private\OPTOOL\OE Tools\Mollie B\Coding\mixkit-battleship-alarm-1001.wav"')
-  some_sound.play()
-  print("Time to get up and get moving!  You asked for this :) This is the sound that you wanted, by the way -this was ALL your idea.")
+    while set_alarm = current_time:
+      some_sound = pygame.mixer.Sound(file_location)#'path/to/my/soundfile.wav"X:\ET_Data-FHills\Private\OPTOOL\OE Tools\Mollie B\Coding\mixkit-battleship-alarm-1001.wav"')
+      some_sound.play()
+      print("Time to get up and get moving!  You asked for this :) This is the sound that you wanted, by the way -this was ALL your idea.")
+
+#video version
+
+def schedule_function(event_time, function, *args):
+  s = sched.sceduler(time.time, time.sleep)
+  s.enterabs(event_time, 1, function, argument = args)
+  print(f'{function.__name__}() scheduled for {time.asctime(time.localtime)}
+  s.run()
