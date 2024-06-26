@@ -2,9 +2,12 @@
 #eg: num = int(input("Enter a number: "))
 #print(num, " ", type(num))
 import time
+import pygame
+pygame.init()
 def sound_the_alarm
   set_alarm = int(input("Please enter the time you want the alarm to go off'")
     alarm_time = set_alarm
   file_location = input("Please enter your sound file location")
 #add playing the sound file
+  some_sound = pygame.mixer.Sound('path/to/my/soundfile.wav"X:\ET_Data-FHills\Private\OPTOOL\OE Tools\Mollie B\Coding\mixkit-battleship-alarm-1001.wav"')
   print("Time to get up and get moving!  You asked for this :) This is the sound that you wanted, by the way -this was ALL your idea.")
