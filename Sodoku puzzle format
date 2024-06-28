@@ -1,0 +1,12 @@
+#video
+puzzle = [['*" if num == 0 else num for num in row] for row in puzzle]
+print()
+for row in range (0,9):
+  if ((row % 3 == 0) and (row != 0)):
+    print('-' * 22) *H line
+  for col in range(0, 9):
+    if ((col % 3 == 0) and (col != 0)):
+      print('|', end='') #V line
+    print(f' {puzzle[row][col]} ', end='')
+  print()
+print()
