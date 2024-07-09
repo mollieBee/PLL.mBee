@@ -1,0 +1,8 @@
+import sys
+import webbrowser
+#define an object representing diferent tasks
+urls  = { 'LinkedInLeanring' = "https://www.linkedin.com/learning/?u=2114610', 'Automate excel w Python' = 'https://towardsdatascience.com/automate-powerpoint-slides-creation-with-python-a639c7d429a6, 'google' = 'www.google.com'}
+#Open the pages
+open_webpage(urls):
+  for url in urls:
+    webbrowser.open_new_tab(url)
