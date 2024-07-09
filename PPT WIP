@@ -1,0 +1,6 @@
+from pptx import Presentation
+import pandas as pd
+import matplotlib.pyplot as plt
+from pptx.util import Inches, Pt
+from pptx.dml.color import RGBColor
+import os
