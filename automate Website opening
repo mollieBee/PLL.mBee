@@ -6,3 +6,10 @@ urls  = { 'LinkedInLeanring' = 'https://www.linkedin.com/learning/?u=2114610', '
 open_webpage(urls):
   for url in urls:
     webbrowser.open(url)
+#call w the second argument
+if __name__=="__main__":
+  set_name = sys.argv[1]
+  urls = urls[set_name]
+  open_webpages(urls)
+
+#errors - add error check
